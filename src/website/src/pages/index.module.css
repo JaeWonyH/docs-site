@@ -21,3 +21,43 @@
   align-items: center;
   justify-content: center;
 }
+
+.paraButtons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.paraButtonPrimary {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-foreground);
+  border: none;
+}
+
+.paraButtonOutline {
+  background: transparent;
+  color: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
+}
+
+.mainSection {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+/* Make outline buttons visible on the dark hero background */
+.heroBanner .paraButtonOutline {
+  color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.heroBanner .paraButtonPrimary {
+  background-color: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.98);
+}
+
+.heroBanner .paraButtonPrimary:hover,
+.heroBanner .paraButtonOutline:hover {
+  opacity: 0.95;
+}
