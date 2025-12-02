@@ -11,6 +11,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '20'
+      - name: Print working directory
+        run: pwd
+        working-directory: src/website
       - run: npm ci
         working-directory: src/website
       - run: npm run build
